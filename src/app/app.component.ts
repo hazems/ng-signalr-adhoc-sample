@@ -36,14 +36,14 @@ export class AppComponent {
 
   }
 
-  public getChannels(): void {
+  getChannels(): void {
     if (this.hubConnection) {
         console.log("Getting channels ...");
         this.hubConnection.invoke('GetChannels');
     }
   }
 
-  public getShows(_channelID): void {
+  getShows(_channelID): void {
     if (this.hubConnection) {
        console.log("Getting shows for channel: " + _channelID);
        this.shows = [];
