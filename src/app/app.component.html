@@ -2,7 +2,7 @@
   <tr>
     <td>First operation</td>
     <td>  
-      <button (click)="getChannels()">Get Channels</button>
+      <button (click)="retrieveChannels()">Get Channels</button>
     </td>
   </tr>
   <tr>
@@ -11,7 +11,7 @@
         <input type="number" [(ngModel)]="channelID" />
       </td>
       <td>  
-        <button (click)="getShows(channelID)">Get Shows</button>
+        <button (click)="retrieveShows(channelID)">Get Shows</button>
       </td>
     </tr>  
 </table>
